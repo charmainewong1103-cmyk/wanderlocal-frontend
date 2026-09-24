@@ -97,7 +97,7 @@ const stories = [
 ]
 
 const trending = [
-  { name: 'Victoria Peak', tag: 'Iconic Viewpoint', crowd: 'high' as const, img: 'https://images.unsplash.com/photo-1678110721308-a08ed05a7938?w=400&h=260&fit=crop&auto=format', rating: 4.9, dist: '4.2 km' },
+  { name: 'Victoria Peak', tag: 'Iconic Viewpoint', crowd: 'high' as const, img: '/victoriapeak.jpg', rating: 4.9, dist: '4.2 km' },
   { name: 'Temple Street', tag: 'Night Market', crowd: 'medium' as const, img: 'https://images.unsplash.com/photo-1552912470-ee2e96439539?w=400&h=260&fit=crop&auto=format', rating: 4.7, dist: '1.8 km' },
   { name: 'Star Ferry', tag: 'Harbour Crossing', crowd: 'low' as const, img: 'https://images.unsplash.com/photo-1577871598838-a543ee47cd79?w=400&h=260&fit=crop&auto=format', rating: 4.8, dist: '0.6 km' },
 ]
@@ -244,7 +244,7 @@ function DonutChart({ pct }: { pct: number }) {
 
 // ─── Home Screen ─────────────────────────────────────────────────────────────
 
-function HomeScreen({ setScreen }: { setScreen: (s: Screen) => void }) {
+function HomeScreen({ setScreen, userName }: { setScreen: (s: Screen) => void; userName: string }) {
   return (
     <div className="min-h-full flex flex-col">
       {/* Top bar */}
@@ -255,7 +255,7 @@ function HomeScreen({ setScreen }: { setScreen: (s: Screen) => void }) {
           </div>
           <div>
             <p className="text-xs font-mono text-coral uppercase tracking-[0.2em]">Tuesday, Oct 8 · Hong Kong</p>
-            <h1 className="font-display text-2xl font-bold text-ink leading-tight">Good morning, Maya</h1>
+            <h1 className="font-display text-2xl font-bold text-ink leading-tight">Good morning, {userName}</h1>
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -873,10 +873,81 @@ const navItems = [
   { id: 'impact' as Screen, label: 'Impact', Icon: IcoLeaf },
 ]
 
+function AuthScreen({ onAuthenticated }: { onAuthenticated: (name: string) => void }) {
+  const [mode, setMode] = useState<'signin' | 'signup'>('signin')
+  const [accountType, setAccountType] = useState<'traveler' | 'business'>('traveler')
+  const [name, setName] = useState('')
+
+  return (
+    <main className="min-h-full bg-cream relative overflow-hidden flex items-center justify-center px-5 py-10">
+      <div className="absolute inset-0 opacity-40 pointer-events-none"
+        style={{ backgroundImage: 'linear-gradient(rgba(17, 23, 34, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(17, 23, 34, 0.04) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+      <div className="relative w-full max-w-md">
+        <div className="text-center mb-8">
+          <div className="brand-stamp inline-flex w-16 h-16 bg-coral rounded-xl items-center justify-center mb-5">
+            <span className="font-display font-black text-white text-3xl leading-none">W</span>
+          </div>
+          <h1 className="font-display text-4xl font-bold text-ink">Wanderlocal</h1>
+        </div>
+
+        <div className="bg-card border border-border rounded-3xl p-6 sm:p-8 shadow-xl shadow-ink/5">
+          <div className="flex bg-cream-dark rounded-xl p-1 mb-6">
+            {(['signin', 'signup'] as const).map(currentMode => (
+              <button key={currentMode} type="button" onClick={() => setMode(currentMode)}
+                className={`flex-1 rounded-lg py-2.5 text-sm font-semibold transition-colors ${mode === currentMode ? 'bg-white text-ink shadow-sm' : 'text-muted hover:text-ink'}`}>
+                {currentMode === 'signin' ? 'Sign in' : 'Sign up'}
+              </button>
+            ))}
+          </div>
+
+          <div className="mb-6">
+            <p className="block text-xs font-mono text-muted uppercase tracking-wider mb-2">I am joining as</p>
+            <div className="grid grid-cols-2 gap-2">
+              {(['traveler', 'business'] as const).map(currentAccountType => (
+                <button key={currentAccountType} type="button" onClick={() => setAccountType(currentAccountType)}
+                  className={`rounded-xl border px-3 py-3 text-sm font-semibold transition-colors ${accountType === currentAccountType ? 'border-forest bg-forest/10 text-forest' : 'border-border bg-cream text-muted hover:border-forest/50 hover:text-ink'}`}>
+                  {currentAccountType === 'traveler' ? 'Traveler' : 'Business'}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <form onSubmit={event => { event.preventDefault(); onAuthenticated(name.trim()) }} className="space-y-4">
+            <label className="block">
+              <span className="block text-xs font-mono text-muted uppercase tracking-wider mb-1.5">Name</span>
+              <input required type="text" value={name} onChange={event => setName(event.target.value)} placeholder="Your name"
+                className="w-full rounded-xl border border-border bg-cream px-4 py-3 text-sm text-ink outline-none focus:border-forest transition-colors" />
+            </label>
+            <label className="block">
+              <span className="block text-xs font-mono text-muted uppercase tracking-wider mb-1.5">Email</span>
+              <input required type="email" placeholder="you@example.com"
+                className="w-full rounded-xl border border-border bg-cream px-4 py-3 text-sm text-ink outline-none focus:border-forest transition-colors" />
+            </label>
+            <label className="block">
+              <span className="block text-xs font-mono text-muted uppercase tracking-wider mb-1.5">Password</span>
+              <input required type="password" minLength={6} placeholder="At least 6 characters"
+                className="w-full rounded-xl border border-border bg-cream px-4 py-3 text-sm text-ink outline-none focus:border-forest transition-colors" />
+            </label>
+            <button type="submit" className="w-full bg-forest-dark hover:bg-forest text-white rounded-xl py-3.5 text-sm font-semibold transition-colors">
+              {mode === 'signin' ? 'Sign in to Wanderlocal' : 'Create your account'}
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  )
+}
+
 // ─── App ─────────────────────────────────────────────────────────────────────
 
 export default function App() {
   const [screen, setScreen] = useState<Screen>('home')
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [userName, setUserName] = useState('')
+
+  if (!isAuthenticated) {
+    return <AuthScreen onAuthenticated={name => { setUserName(name); setIsAuthenticated(true) }} />
+  }
 
   return (
     <div className="urban-shell flex h-full bg-cream overflow-hidden font-sans">
@@ -909,7 +980,7 @@ export default function App() {
 
       {/* Main */}
       <main className="flex-1 overflow-y-auto">
-        {screen === 'home' && <HomeScreen setScreen={setScreen} />}
+        {screen === 'home' && <HomeScreen setScreen={setScreen} userName={userName} />}
         {screen === 'itinerary' && <ItineraryScreen />}
         {screen === 'assistant' && <AssistantScreen />}
         {screen === 'community' && <CommunityScreen />}
