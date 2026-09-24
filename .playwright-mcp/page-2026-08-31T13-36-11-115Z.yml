@@ -1,0 +1,159 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e6]: W
+    - navigation [ref=e7]:
+      - button "Discover" [ref=e8]:
+        - img [ref=e9]
+        - generic [ref=e12]: Discover
+      - button "Itinerary" [active] [ref=e14]:
+        - img [ref=e15]
+        - generic [ref=e17]: Itinerary
+      - button "AI Guide" [ref=e18]:
+        - img [ref=e19]
+        - generic [ref=e21]: AI Guide
+      - button "Community" [ref=e22]:
+        - img [ref=e23]
+        - generic [ref=e28]: Community
+      - button "Impact" [ref=e29]:
+        - img [ref=e30]
+        - generic [ref=e33]: Impact
+    - img "Maya" [ref=e35] [cursor=pointer]
+  - main [ref=e36]:
+    - generic [ref=e163]:
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - paragraph [ref=e168]: Smart Itinerary
+              - heading "Kyoto · 3-Day Plan" [level=2] [ref=e169]
+            - generic [ref=e170]:
+              - paragraph [ref=e171]: Budget
+              - paragraph [ref=e172]: ¥85,000
+              - paragraph [ref=e173]: ¥45,200 spent
+          - generic [ref=e176]:
+            - generic [ref=e177]: 53% used
+            - generic [ref=e178]: ¥39,800 left
+          - generic [ref=e179]:
+            - button "Day 1" [ref=e180]
+            - button "Day 2" [ref=e181]
+            - button "Day 3" [ref=e182]
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - heading "Arrival & East" [level=3] [ref=e185]
+            - generic [ref=e186]: Est. ¥6,800
+          - generic [ref=e189]:
+            - generic [ref=e190]:
+              - generic [ref=e193]: 10:00
+              - generic [ref=e194]:
+                - generic [ref=e195]:
+                  - generic [ref=e196]:
+                    - generic [ref=e197]:
+                      - paragraph [ref=e198]: Kinkaku-ji
+                      - generic [ref=e199]:
+                        - img [ref=e200]
+                        - text: Verified
+                    - paragraph [ref=e202]: Shrine
+                  - generic [ref=e203]: high crowd
+                - generic [ref=e204]:
+                  - generic [ref=e205]:
+                    - img [ref=e206]
+                    - text: 1.5h
+                  - generic [ref=e209]: ¥500
+                - paragraph [ref=e211]: ✨ Arrive before 9am to avoid peak crowds
+            - generic [ref=e212]:
+              - generic [ref=e215]: 12:30
+              - generic [ref=e216]:
+                - generic [ref=e217]:
+                  - generic [ref=e218]:
+                    - generic [ref=e219]:
+                      - paragraph [ref=e220]: Ippudo Ramen
+                      - generic [ref=e221]:
+                        - img [ref=e222]
+                        - text: Verified
+                    - paragraph [ref=e224]: Dining
+                  - generic [ref=e225]: medium crowd
+                - generic [ref=e226]:
+                  - generic [ref=e227]:
+                    - img [ref=e228]
+                    - text: 45m
+                  - generic [ref=e231]: ¥1,200
+            - generic [ref=e232]:
+              - generic [ref=e235]: 14:00
+              - generic [ref=e236]:
+                - generic [ref=e237]:
+                  - generic [ref=e238]:
+                    - generic [ref=e239]:
+                      - paragraph [ref=e240]: Philosopher's Path
+                      - generic [ref=e241]:
+                        - img [ref=e242]
+                        - text: Verified
+                    - paragraph [ref=e244]: Outdoor
+                  - generic [ref=e245]: low crowd
+                - generic [ref=e246]:
+                  - generic [ref=e247]:
+                    - img [ref=e248]
+                    - text: 2h
+                  - generic [ref=e251]: Free
+                - paragraph [ref=e253]: ✨ AI suggested — 60% quieter than Fushimi
+            - generic [ref=e254]:
+              - generic [ref=e257]: 17:00
+              - generic [ref=e258]:
+                - generic [ref=e259]:
+                  - generic [ref=e260]:
+                    - generic [ref=e261]:
+                      - paragraph [ref=e262]: Nanzen-ji Temple
+                      - generic [ref=e263]:
+                        - img [ref=e264]
+                        - text: Verified
+                    - paragraph [ref=e266]: Shrine
+                  - generic [ref=e267]: low crowd
+                - generic [ref=e268]:
+                  - generic [ref=e269]:
+                    - img [ref=e270]
+                    - text: 1h
+                  - generic [ref=e273]: ¥600
+            - generic [ref=e274]:
+              - generic [ref=e277]: 19:30
+              - generic [ref=e278]:
+                - generic [ref=e279]:
+                  - generic [ref=e280]:
+                    - generic [ref=e281]:
+                      - paragraph [ref=e282]: Kikunoi Kaiseki
+                      - generic [ref=e283]:
+                        - img [ref=e284]
+                        - text: Verified
+                    - paragraph [ref=e286]: Dining
+                  - generic [ref=e287]: medium crowd
+                - generic [ref=e288]:
+                  - generic [ref=e289]:
+                    - img [ref=e290]
+                    - text: 2h
+                  - generic [ref=e293]: ¥4,500
+      - complementary [ref=e294]:
+        - generic [ref=e295]:
+          - paragraph [ref=e296]: AI Suggestions
+          - heading "Alternatives for Day 1" [level=3] [ref=e297]
+        - generic [ref=e298]:
+          - generic [ref=e299] [cursor=pointer]:
+            - generic [ref=e300]:
+              - paragraph [ref=e301]: Jojakko-ji Temple
+              - generic [ref=e302]: low crowd
+            - paragraph [ref=e303]: Similar vibe to Tenryu-ji with 70% fewer visitors today
+            - paragraph [ref=e304]: 45 min walk
+          - generic [ref=e305] [cursor=pointer]:
+            - generic [ref=e306]:
+              - paragraph [ref=e307]: Otoyo Shrine
+              - generic [ref=e308]: low crowd
+            - paragraph [ref=e309]: Hidden gem at the end of Philosopher's Path — cat statues, no queue
+            - paragraph [ref=e310]: 5 min detour
+          - generic [ref=e311] [cursor=pointer]:
+            - generic [ref=e312]:
+              - paragraph [ref=e313]: Kanga-an Temple
+              - generic [ref=e314]: low crowd
+            - paragraph [ref=e315]: Off-peak lunch deal from verified merchant until 2pm
+            - paragraph [ref=e316]: 15 min taxi
+          - generic [ref=e317]:
+            - paragraph [ref=e318]: Offline Package
+            - paragraph [ref=e319]: Download Ready
+            - paragraph [ref=e320]: Maps, emergency contacts & translated etiquette phrases loaded for offline use.
+            - button "Manage Downloads" [ref=e321]

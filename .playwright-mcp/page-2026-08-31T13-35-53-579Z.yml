@@ -1,0 +1,122 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e6]: W
+    - navigation [ref=e7]:
+      - button "Discover" [ref=e8]:
+        - img [ref=e9]
+        - generic [ref=e12]: Discover
+      - button "Itinerary" [ref=e14]:
+        - img [ref=e15]
+        - generic [ref=e17]: Itinerary
+      - button "AI Guide" [ref=e18]:
+        - img [ref=e19]
+        - generic [ref=e21]: AI Guide
+      - button "Community" [ref=e22]:
+        - img [ref=e23]
+        - generic [ref=e28]: Community
+      - button "Impact" [ref=e29]:
+        - img [ref=e30]
+        - generic [ref=e33]: Impact
+    - img "Maya" [ref=e35] [cursor=pointer]
+  - main [ref=e36]:
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - paragraph [ref=e40]: Sunday, Aug 31
+          - heading "Good morning, Maya" [level=1] [ref=e41]
+        - generic [ref=e42]:
+          - button [ref=e43]:
+            - img [ref=e44]
+          - button [ref=e48]:
+            - img [ref=e49]
+      - generic [ref=e52]:
+        - generic [ref=e53] [cursor=pointer]:
+          - img "Kyoto cityscape" [ref=e54]
+          - generic [ref=e56]: 3 days left
+          - generic [ref=e57]:
+            - text: Active Trip
+            - heading "Kyoto, Japan" [level=2] [ref=e58]
+            - paragraph [ref=e59]: Sept 12–18 · Day 5 of 7 · ¥39,800 remaining
+          - img [ref=e61]
+        - generic [ref=e63]:
+          - button "🗺️ Plan Route" [ref=e64]:
+            - generic [ref=e65]: 🗺️
+            - generic [ref=e66]: Plan Route
+          - button "✨ Ask Local AI" [ref=e67]:
+            - generic [ref=e68]: ✨
+            - generic [ref=e69]: Ask Local AI
+          - button "🏷️ Find Deals" [ref=e70]:
+            - generic [ref=e71]: 🏷️
+            - generic [ref=e72]: Find Deals
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - heading "Fellow Travelers Nearby" [level=3] [ref=e75]
+            - button "See all" [ref=e76]
+          - generic [ref=e77]:
+            - button "Yuki Yuki" [ref=e78]:
+              - img "Yuki" [ref=e80]
+              - generic [ref=e81]: Yuki
+            - button "Tomás Tomás" [ref=e83]:
+              - img "Tomás" [ref=e85]
+              - generic [ref=e86]: Tomás
+            - button "Aisha Aisha" [ref=e88]:
+              - img "Aisha" [ref=e90]
+              - generic [ref=e91]: Aisha
+            - button "Lars Lars" [ref=e92]:
+              - img "Lars" [ref=e94]
+              - generic [ref=e95]: Lars
+            - button "Priya Priya" [ref=e96]:
+              - img "Priya" [ref=e98]
+              - generic [ref=e99]: Priya
+            - button "Kai Kai" [ref=e101]:
+              - img "Kai" [ref=e103]
+              - generic [ref=e104]: Kai
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - heading "Trending Nearby" [level=3] [ref=e107]:
+              - img [ref=e109]
+              - text: Trending Nearby
+            - button "Explore map" [ref=e112]
+          - generic [ref=e113]:
+            - generic [ref=e114] [cursor=pointer]:
+              - generic [ref=e115]:
+                - img "Arashiyama" [ref=e116]
+                - generic [ref=e118]: low crowd
+              - generic [ref=e119]:
+                - paragraph [ref=e120]: Arashiyama
+                - paragraph [ref=e121]: Bamboo Grove
+                - generic [ref=e122]:
+                  - generic [ref=e123]:
+                    - img [ref=e124]
+                    - text: "4.9"
+                  - generic [ref=e126]:
+                    - img [ref=e127]
+                    - text: 8.2 km
+            - generic [ref=e130] [cursor=pointer]:
+              - generic [ref=e131]:
+                - img "Nishiki Market" [ref=e132]
+                - generic [ref=e134]: medium crowd
+              - generic [ref=e135]:
+                - paragraph [ref=e136]: Nishiki Market
+                - paragraph [ref=e137]: Street Food
+                - generic [ref=e138]:
+                  - generic [ref=e139]:
+                    - img [ref=e140]
+                    - text: "4.7"
+                  - generic [ref=e142]:
+                    - img [ref=e143]
+                    - text: 2.1 km
+            - generic [ref=e146] [cursor=pointer]:
+              - generic [ref=e147]:
+                - img "Fushimi Inari" [ref=e148]
+                - generic [ref=e150]: high crowd
+              - generic [ref=e151]:
+                - paragraph [ref=e152]: Fushimi Inari
+                - paragraph [ref=e153]: Shrine Gates
+                - generic [ref=e154]:
+                  - generic [ref=e155]:
+                    - img [ref=e156]
+                    - text: "4.8"
+                  - generic [ref=e158]:
+                    - img [ref=e159]
+                    - text: 5.4 km

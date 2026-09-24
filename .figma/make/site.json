@@ -1,0 +1,10 @@
+{
+  "description": "This interactive travel app enhances user experiences by providing personalized itineraries, verified local insights, and a platform for community engagement.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
