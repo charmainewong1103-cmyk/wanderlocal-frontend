@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --color-cream: #F4F3EF;
-  --color-cream-dark: #E8E7E2;
-  --color-forest: #087E8B;
-  --color-forest-light: #39B7BE;
-  --color-forest-dark: #111722;
-  --color-coral: #C8102E;
-  --color-coral-light: #E52644;
-  --color-gold: #FFB703;
-  --color-gold-light: #FFD166;
-  --color-ink: #111722;
-  --color-ink-soft: #323844;
-  --color-muted: #747984;
-  --color-border: #D7D6D0;
-  --color-card: #FCFCFA;
+  --color-cream: #F3EEE6;
+  --color-cream-dark: #E7DFD2;
+  --color-forest: #AAB7A1;
+  --color-forest-light: #C9D3C1;
+  --color-forest-dark: #4A564E;
+  --color-coral: #D8B6A1;
+  --color-coral-light: #EAD7C8;
+  --color-gold: #D7C39A;
+  --color-gold-light: #E5D9B2;
+  --color-ink: #171716;
+  --color-ink-soft: #3D3B37;
+  --color-muted: #6C675F;
+  --color-border: #E1D7CB;
+  --color-card: #F9F5F0;
 
-  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Fraunces', ui-serif, Georgia, serif;
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Cormorant Garamond', ui-serif, Georgia, serif;
   --font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
 
   --radius-xl: 0.625rem;
@@ -36,7 +36,7 @@ body,
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-cream);
+  background: linear-gradient(180deg, #f2efe9 0%, #efe8df 100%);
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
 }
@@ -48,19 +48,21 @@ body {
 .urban-shell main {
   position: relative;
   background-color: var(--color-cream);
-  background-image:
-    linear-gradient(rgba(17, 23, 34, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(17, 23, 34, 0.025) 1px, transparent 1px);
-  background-size: 32px 32px;
+  background-image: none;
 }
 
 .urban-shell main::before {
   position: fixed;
   inset: 0 0 0 88px;
   z-index: -1;
-  background: radial-gradient(circle at 90% -10%, rgba(200, 16, 46, 0.09), transparent 32%);
+  background: radial-gradient(circle at 90% -10%, rgba(168, 170, 159, 0.12), transparent 32%);
   content: '';
   pointer-events: none;
+}
+
+.font-display {
+  letter-spacing: -0.05em;
+  font-weight: 600;
 }
 
 .city-header {
@@ -68,20 +70,20 @@ body {
 }
 
 .hero-panel {
-  box-shadow: 0 18px 48px rgba(17, 23, 34, 0.18);
+  box-shadow: 0 18px 42px rgba(78, 89, 82, 0.11);
 }
 
 .hero-panel::after {
   position: absolute;
   inset: 0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: inherit;
   content: '';
   pointer-events: none;
 }
 
 .brand-stamp {
-  box-shadow: 4px 4px 0 var(--color-gold);
+  box-shadow: 4px 4px 0 rgba(217, 185, 123, 0.8);
   transform: rotate(-2deg);
 }
 

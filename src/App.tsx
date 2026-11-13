@@ -45,7 +45,7 @@ const IcoSend = () => (
   </svg>
 )
 const IcoHeart = ({ filled }: { filled?: boolean }) => (
-  <svg width="15" height="15" viewBox="0 0 24 24" fill={filled ? '#E8552D' : 'none'} stroke={filled ? '#E8552D' : 'currentColor'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill={filled ? 'var(--color-coral)' : 'none'} stroke={filled ? 'var(--color-coral)' : 'currentColor'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
   </svg>
 )
@@ -70,7 +70,7 @@ const IcoPin = () => (
   </svg>
 )
 const IcoStar = () => (
-  <svg width="12" height="12" viewBox="0 0 24 24" fill="#F4A827">
+  <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-gold)">
     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
   </svg>
 )
